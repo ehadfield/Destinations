@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Destinations</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Places we have been:</h1>
+      <h2>Look up a destination!</h2>
+      <form id="destination">
+        <label for="location">Location: </label>
+        <input type="text" id="location">
+        <!-- <label for="new-landMark">Landmark</label>
+        <input type="text" id="new-landMark">
+        <label for="new-timeOfYear">Time of Year</label>
+        <input type="text" id="new-timeOfYear">
+        <label for="new-notes">Notes</label>
+        <input type="text" id="new-notes"> -->
+        <button type="submit">Search</button>
+      </form>
+
+      <h2 class= "result">Details:</h2>
+      <ul id="destinations">
+      </ul>
+
+      <div id="show-destination">
+        <p>Location: <span class="location"></span></p>
+        <p>Landmark: <span class="landMark"></span></p>
+        <p>Time of Year: <span class="timeofYear"></span></p>
+        <p>Notes: <span class="notes"></span></p>
+        <div id="buttons">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
