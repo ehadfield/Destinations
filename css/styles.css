@@ -1,3 +1,15 @@
 #show-destination, .result {
   display: none;
 }
+
+img {
+  width: 100%;
+}
+
+p {
+  text-align: center;
+}
+
+ul {
+  text-align: left;
+}

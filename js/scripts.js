@@ -8,13 +8,6 @@ MyTravelBook.prototype.addDestination = function(destination) {
   this.destinations.push(destination);
 };
 
-// var travelbook = new MyTravelBook();
-//
-// travelbook.addDestination("Greece");
-// travelbook.addDestination("Croatia");
-// travelbook.addDestination("Singapore");
-// travelbook.addDestination("Taiwan");
-
 MyTravelBook.prototype.assignId = function() {
   this.currentId += 1;
   return this.currentId;
@@ -40,29 +33,30 @@ function destination(place, landMark, timeOfYear, review){
 }
 
 destination.prototype.destinationGroup = function() {
-  return this.place + ", " + this.timeOfYear + ", " + this.landMark + ", " + this.review;
+  return "<li>" + "Country: " + this.place + "</li>"  + "<li>" + "Landmarks: " + this.landMark + "</li>" + "<li>" + "Time of Year: " + this.timeOfYear + "</li>" + "<li>" + "Review: " + this.review + "</li>";
 };
 
-// var destination1  = new destination("Greece", ["Parthenon Temple", "Santorini", "Windmills in Cyclades"], "spring", "loved it!");
-// var destination2 = new destination("Croatia", ["Dubrovnic", "Plitvice Lakes", "Hvar"], "spring", "better than Greece");
-// var destination3 = new destination("Singapore", ["Haka Stands", "Marina Bay Sands"], "fall", "expensive, don't stay for long");
-// var destination4 = new destination("Taiwan", ["Taipei 101", "Longdong", "Gongguang"], "fall", "learn rock climbing");
+var destination1  = new destination("Greece", ["Parthenon Temple", "Santorini", "Windmills in Cyclades"], "spring", "loved it!");
+var destination2 = new destination("Croatia", ["Dubrovnic", "Plitvice Lakes", "Hvar"], "spring", "better than Greece");
+var destination3 = new destination("Singapore", ["Haka Stands", "Marina Bay Sands"], "fall", "expensive, don't stay for long");
+var destination4 = new destination("Taiwan", ["Taipei 101", "Longdong", "Gongguang"], "fall", "learn rock climbing");
 
 //
-// $(document).ready(function()  {
-//   $("form#destination").submit(function(event) {
-//     event.preventDefault();
-//     var Greece = $("input#greece").val();
-//     var Croatia = $("input#croatia").val();
-//     var Singapore = $("input#singapore").val();
-//     var Taiwan = $("input#taiwan").val();
-//
-//
-//     var inputtedFirstName = $("input#new-first-name").val();
-//     var inputtedLastName = $("input#new-last-name").val();
-//     var inputtedPhoneNumber = $("input#new-phone-number").val();
-//     var newContact = new Contact(inputtedFirstName, inputtedLastName, inputtedPhoneNumber);
-//     addressBook.addContact(newContact);
-//     console.log(addressBook.contacts);
-//   });
-// });
+$(document).ready(function()  {
+  $("#btn1").click(function() {
+    $("#greece").html(destination1.destinationGroup());
+    $("#greece").toggle();
+  });
+  $("#btn2").click(function() {
+    $("#croatia").html(destination2.destinationGroup());
+    $("#croatia").toggle();
+  });
+  $("#btn3").click(function() {
+    $("#singapore").html(destination3.destinationGroup());
+    $("#singapore").toggle();
+  });
+  $("#btn4").click(function() {
+    $("#taiwan").html(destination4.destinationGroup());
+    $("#taiwan").toggle();
+  });
+});

@@ -9,20 +9,69 @@
     <title>Destinations</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container" id="destination">
       <h1>Places we have been:</h1>
       <h2>Look up a destination!</h2>
-      <form id="destination">
-        <label for="location">Location: </label>
-        <input type="text" id="location">
-        <!-- <label for="new-landMark">Landmark</label>
-        <input type="text" id="new-landMark">
-        <label for="new-timeOfYear">Time of Year</label>
-        <input type="text" id="new-timeOfYear">
-        <label for="new-notes">Notes</label>
-        <input type="text" id="new-notes"> -->
-        <button type="submit">Search</button>
-      </form>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="img/greece.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Greece</h5>
+              <p class="card-text">Admire the Acropolis in Athens and the see blue-domed buildings on Santorini as you explore ancient cities and postcard-perfect Mediterranean coasts on a tour through Greece.</p>
+              <a href="#" class="btn btn-primary" id="btn1">Go to Greece!</a>
+              <br>
+              <br>
+            </div>
+            <ul id="greece">
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="img/croatia.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Croatia</h5>
+              <p class="card-text">Trace Croatia’s history as you travel from ancient Dubrovnik to stunning seaside Split, then explore the scenic waterscapes at Plitvice and the bustling capital of Zagreb.</p>
+              <a href="#" class="btn btn-primary" id="btn2">Go to Croatia!</a>
+              <br>
+              <br>
+            </div>
+            <ul id="croatia">
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="img/singapore.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Greece</h5>
+              <p class="card-text">You’d think a tiny nation the size of an average American city would be easy to know at a glance, but Singapore specializes in defying expectations.</p>
+              <a href="#" class="btn btn-primary" id="btn3">Go to Singapore!</a>
+              <br>
+              <br>
+            </div>
+            <ul id="singapore">
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="img/taiwan.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Taiwan</h5>
+              <p class="card-text">Few destinations in recent memory have overwhelmingly surprised me as much Taiwan. Visiting on a whim out of curiosity, I came with few expectations and very little clue what was ahead of me.</p>
+              <a href="#" class="btn btn-primary" id="btn4">Go to Taiwan!</a>
+              <br>
+              <br>
+            </div>
+            <ul id="taiwan">
+            </ul>
+          </div>
+        </div>
+      </div>
+
 
       <h2 class= "result">Details:</h2>
       <ul id="destinations">
